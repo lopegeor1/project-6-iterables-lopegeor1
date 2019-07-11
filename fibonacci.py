@@ -6,7 +6,7 @@ class MyRange:
     """A range used to create object with fibanacci properties"""
     def __init__(self, stop):
         """
-        Requires start and stop values, and an optional step.
+        Requires start and stop values.
         """
         if not isinstance(stop, int):
             raise ValueError
