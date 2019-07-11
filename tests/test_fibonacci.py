@@ -12,3 +12,9 @@ def test_invalid_input():
     with pytest.raises(ValueError):
         apple = 'apple'
         list(MyRange(apple))
+
+def test_input_of_0():
+    """
+    Given input of zero, list should be [0].
+    """
+    assert [number for number in MyRange(0)] == [0]
