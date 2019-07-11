@@ -4,7 +4,7 @@ fibonacci.py -- Write the application code here
 
 class MyRange:
     """A range used to create object with fibanacci properties"""
-    def __init__(self, stop, step=1):
+    def __init__(self, stop):
         """
         Requires start and stop values, and an optional step.
         """
@@ -12,7 +12,6 @@ class MyRange:
             raise ValueError
 
         self.stop = stop + 1
-        self.step = step
         self.data = []
         start = 0 #  this variable is predifined, no user input (args) required
         self.start = start
@@ -27,7 +26,7 @@ class MyRange:
     def __next__(self):
         """Defines the instance object as an iterator."""
         if self.current == (self.start - 1):
-            self.current += self.step # Increment by the step value
+            self.current += 1 # Increment by the initial step value
             self.data.append(self.current)
         elif self.current == 0:
             self.current = self.prev1

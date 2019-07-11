@@ -42,3 +42,9 @@ def test_input_of_10():
     Given input of ten, list should be [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55].
     """
     assert list(MyRange(10)) == [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+
+def test_input_of_neg_int():
+    """
+    Given a negative integer input value, list should be [] empty.
+    """
+    assert list(MyRange(-10)) == []
