@@ -18,3 +18,9 @@ def test_input_of_0():
     Given input of zero, list should be [0].
     """
     assert [number for number in MyRange(0)] == [0]
+
+def test_input_of_1():
+    """
+    Given input of one, list should be [0, 1].
+    """
+    assert [number for number in MyRange(1)] == [0, 1]
