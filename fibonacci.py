@@ -18,6 +18,7 @@ class MyRange:
         self.start = start
         self.current = start - 1  # Use the starting value minus a step
         self.prev1 = 1
+        self.prev2 = 0
 
     def __iter__(self):
         """Returns the instance object which is an iterator."""
@@ -28,9 +29,14 @@ class MyRange:
         if self.current == (self.start - 1):
             self.current += self.step # Increment by the step value
             self.data.append(self.current)
-        elif self.current >= 0:
+        elif self.current == 0:
             self.current = self.prev1
             self.data.append(self.current)
+        elif self.current >= 1:
+            self.current = self.prev1 + self.prev2
+            self.data.append(self.current)
+            self.prev2 = self.prev1
+            self.prev1 = self.current
 
         if (len(self.data) - 1) >= self.stop:
             raise StopIteration

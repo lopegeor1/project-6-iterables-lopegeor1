@@ -24,3 +24,9 @@ def test_input_of_1():
     Given input of one, list should be [0, 1].
     """
     assert [number for number in MyRange(1)] == [0, 1]
+
+def test_input_of_2():
+    """
+    Given input of two, list should be [0, 1, 1].
+    """
+    assert [number for number in MyRange(2)] == [0, 1, 1]
