@@ -12,7 +12,7 @@ class MyRange:
             raise ValueError
 
         self.stop = stop + 1
-        self.data = []
+        self.range = []
         start = 0 #  this variable is predifined, no user input (args) required
         self.start = start
         self.current = start - 1  # Use the starting value minus a step
@@ -27,17 +27,15 @@ class MyRange:
         """Defines the instance object as an iterator."""
         if self.current == (self.start - 1):
             self.current += 1 # Increment by the initial step value
-            self.data.append(self.current)
         elif self.current == 0:
             self.current = self.prev1
-            self.data.append(self.current)
         elif self.current >= 1:
             self.current = self.prev1 + self.prev2
-            self.data.append(self.current)
             self.prev2 = self.prev1
             self.prev1 = self.current
 
-        if (len(self.data) - 1) >= self.stop:
+        self.range.append(1)
+        if (len(self.range) - 1) >= self.stop:
             raise StopIteration
 
         return self.current
