@@ -11,10 +11,10 @@ Example:
 [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
 ```
 
-### `(/7)` Structure & naming
-- `(/1)` Write a test module called `test_fibonacci.py`
-- `(/1)` Write a module called `fibonacci.py`
-- `(/5)` Create an iterable class called `Fibonacci` which requires a single
+### `(5/7)` Structure & naming
+- `(1/1)` Write a test module called `test_fibonacci.py`
+- `(1/1)` Write a module called `fibonacci.py`
+- `(4/5)` Create an iterable class called `Fibonacci` which requires a single
   positional argument. Remember, an iterable class has to:
     - Have an `__iter__`
     - Have a `__next__`
@@ -49,16 +49,16 @@ assert list(Fibonacci(2)) == [0, 1, 1]
 sequence. Building a function which only handles the above cases is
 insufficient and will not be accepted.
 
-### `(/21)` Development matrix
+### `(20/21)` Development matrix
 | Step | Test assertion | Code written to pass | Commit Exists |
 | ---- | ---- | ---- | ------ |
-| **#1** | | | |
-| **#2** | | | |
-| **#3** | | | |
-| **#4** | | | |
-| **#5** | | | |
-| **#6** | | | |
-| **#7** | | | |
+| **#1** |x |x |x |
+| **#2** |x |x |x |
+| **#3** |x |x |x |
+| **#4** |x |x |x |
+| **#5** |x | |x |
+| **#6** |x |x |x|
+| **#7** |x |x| x |
 
 
 ### Code style
