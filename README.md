@@ -11,7 +11,7 @@ Example:
 [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
 ```
 
-### `(5/7)` Structure & naming
+### `(6/7)` Structure & naming
 - `(1/1)` Write a test module called `test_fibonacci.py`
 - `(1/1)` Write a module called `fibonacci.py`
 - `(4/5)` Create an iterable class called `Fibonacci` which requires a single
